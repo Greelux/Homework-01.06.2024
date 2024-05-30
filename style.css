@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+.calendar {
+    text-align: center;
+}
+
+.month {
+    display: inline-block;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.month h3 {
+    text-align: center;
+}
+
+.month table {
+    border-collapse: collapse;
+}
+
+.month th,
+.month td {
+    text-align: center;
+    padding: 5px;
+}
+h3{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 60px
+}
+td:hover{
+    animation: transform 20s infinite;
+}
+@keyframes transform {
+    0% {
+        background: linear-gradient(to right, rgb(241, 116, 141),rgb(10, 226, 255), rgb(241, 116, 141));
+        background-size: 700% 100%;
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -700% 0;
+    }
+}
